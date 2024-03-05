@@ -16,8 +16,8 @@ To use this app, simply clone the repository and open the `index.html` file in y
 
 ## Deployment
 
-- This project is hosted on #Netlify
-- You can access the live version of the app [here](((https://weather-application-brynsgtn.netlify.app/))).
+- This project is hosted on [Netlify] (https://www.netlify.com)
+- You can access the live version of the app [here](https://weather-application-brynsgtn.netlify.app/).
 
 ## Credits
 
