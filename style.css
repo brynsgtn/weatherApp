@@ -1,0 +1,140 @@
+* {
+    border-bottom: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 120%;
+
+    
+}
+
+.card-search, .card-weather {
+    text-align: center;
+    background: #000000d0;
+    color: white;
+    padding: 1em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: .5em;
+}
+
+.card-bottom {
+    background: #000000d0;
+    color: white;
+    padding: 1em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: .5em;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar {
+    text-transform: capitalize;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background-color: #7c7c7c2b;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background-color: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.feels, .flex {
+    margin-bottom: 5px;
+}
+
+.feels {
+    margin-left: 10px;;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-spacebetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading....";
+    color: white;
+    position: absolute;
+    top: 0%;
+    left: 20px;
+}
+
+.humidity, .wind, .pressure {
+    margin-bottom: 5px;
+}
+
+.btn-group button {
+
+    color: white; /* White text */
+    padding: 5px 15px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+}
+  
+  .btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
