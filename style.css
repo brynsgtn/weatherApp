@@ -1,7 +1,8 @@
+/* Stylesheet */
+
 * {
     border-bottom: 0;
 }
-
 
 body {
     display: flex;
@@ -14,9 +15,7 @@ body {
     background-image: url('https://source.unsplash.com/1600x900/?landscape');
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 120%;
-
-    
+    font-size: 120%; 
 }
 
 .card-search, .card-weather {
@@ -128,12 +127,12 @@ h1.temp {
 
 .btn-group button {
 
-    color: white; /* White text */
-    padding: 5px 15px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
 }
   
   .btn-group button:not(:last-child) {
-    border-bottom: none; /* Prevent double borders */
+    border-bottom: none;
   }
   

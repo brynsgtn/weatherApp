@@ -1,3 +1,6 @@
+// Script
+
+// Global variables
 const weatherEl = document.querySelector(".weather");
 const searchBarEl = document.querySelector(".search-bar");
 const searchButtonEl = document.querySelector(".search button");
@@ -27,10 +30,7 @@ let distance = "km";
 
 
 
-
-
-
-
+// Object with fetch, search, and display function
 let weather = {
     apiKey: "347f1a2ff2ff158340422dc4e47a4143",
     fetchWeather: function (city) {
@@ -67,6 +67,10 @@ let weather = {
     }
 }
 
+// Location on start-up
+weather.fetchWeather("Chicago")
+
+// Event listeners
 searchButtonEl.addEventListener("click", function() {
    weather.search()
 })
@@ -78,27 +82,20 @@ searchBarEl.addEventListener("keyup", function(event) {
 })
 
 farenheitEl.addEventListener("click", function(){
-
         units = "imperial";
         degree = "F"
         distance = "mi"
         weather.fetchWeather(cityEl.innerText.split(',')[0]);
-        console.log("clicke!")
-  
-
 })
 
 celciusEl.addEventListener("click", function(){
-
         units = "metric";
         degree = "C"
         distance = "km";
         weather.fetchWeather(cityEl.innerText.split(',')[0]);
-        console.log("clicke!")
-
 })
 
-weather.fetchWeather("Chicago")
+
 
 
 
